@@ -72,8 +72,13 @@ Loads a saved user interaction
 
 plays the current user interaction
 
+#### recap.transform(type)
 
+transforms the current recap into something else.
 
+```bash
+> recap.transform("selenium")
+```
 
 
 
