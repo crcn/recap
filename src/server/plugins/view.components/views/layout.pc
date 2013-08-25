@@ -1,0 +1,7 @@
+<html>
+  <head>
+  </head>
+  <body>
+    {{ section: sections.body }}
+  </body>
+</html>

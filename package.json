@@ -10,7 +10,9 @@
     "express": "~3.3.5",
     "bindable": "~0.4.0",
     "paperclip": "~0.2.7",
-    "mojojs": "~0.6.5"
+    "mojojs": "~0.6.5",
+    "underscore": "~1.5.1",
+    "toarray": "0.0.1"
   },
   "devDependencies": {
     "coffee-script": "~1.6.3",
@@ -19,7 +21,8 @@
     "mkdirp": "~0.3.5",
     "request": "~2.27.0",
     "node-osx-notifier": "~0.1.0",
-    "mesh": "~0.2.5"
+    "mesh": "~0.2.5",
+    "browserify": "~2.29.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,14 +1,11 @@
 BookmarkletView = require "./bookmarklet"
 
-exports.require = ["server"]
-exports.plugin  = (server) ->
+exports.require = ["server", "config", "view.components"]
+exports.plugin  = (server, config) ->
   console.log("go to /bookmarklet and run it in any browser to start recap");
 
-  try 
-    view = new BookmarkletView()
-    view.render () ->
-      console.log "DD"
 
-    console.log view.section.toString(), "G"
-  catch e
-    console.error e.stack
+  server.get "/bookmarklet", (req, res) ->
+    view = new BookmarkletView({ httpPort: config.port })
+    view.render () -> 
+      res.send view.section.toString()

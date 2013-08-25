@@ -1,1 +1,9 @@
-fdfs
+{{#mainLayout: { parent: this } }}  
+
+  {{#section: "body" }}
+
+    <a href="javascript:{{ parent.getBookmarklet() }}">inject recorder</a>
+
+  {{/}}
+
+{{/}}
