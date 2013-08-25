@@ -52,6 +52,18 @@ Saves the actions to replayed at a later time
 
 Returns all saved user interactions
 
+```bash
+> recap.saved()
+[
+  { name: "login", desc: "login the user" },
+  { name: "goToDashboard", desc: "loads the dashboard" }
+]
+```
+
+#### recap.remove(name)
+
+removes a saved recording
+
 #### recap.load(name)
 
 Loads a saved user interaction
