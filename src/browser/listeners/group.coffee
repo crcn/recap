@@ -28,7 +28,10 @@ class GroupListener extends require("./base")
   ###
   ###
 
-  _onEvent: (type, value) => @emit type, value
+  _onEvent: (event) => 
+    @emit event.type, event.data
+    @emit "event", event
+    @emit event.listener + ".event", event
 
 
 

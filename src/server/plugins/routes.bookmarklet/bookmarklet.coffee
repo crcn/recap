@@ -20,16 +20,15 @@ class BookmarkletView extends mojo.View
       return if window.recapped
       scripts = []
 
-      if typeof $ is undefined  
-        scripts.push "http://127.0.0.1:{{PORT}}/vendor/jquery-1.10.2.js"
+      if typeof $ is "undefined"
+        scripts.push "vendor/jquery-1.10.2.js"
 
-      scripts = [
-        "http://localhost:{{PORT}}/index.min.js?" + Date.now() 
-      ]
+      scripts.push "vendor/jquery-xpath.js"
+      scripts.push "index.min.js?" + Date.now() 
 
       for scriptSrc in scripts
         script = document.createElement "script"
-        script.src = scriptSrc
+        script.src = "http://127.0.0.1:{{PORT}}/" + scriptSrc
         document.head.appendChild script
 
 

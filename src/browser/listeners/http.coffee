@@ -4,7 +4,6 @@ class HttpListener extends require("./base")
   ###
 
   start: () ->
-    console.log "start HTTP listener"
 
   ###
   ###

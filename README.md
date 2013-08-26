@@ -44,9 +44,16 @@ adds a user interaction to the beginning. This allows you to easily **chain acti
 
 Unshifts an action 
 
-#### recap.save(name, description)
+#### Action recap.create(name)
 
-Saves the actions to replayed at a later time
+Creates a new set of actions
+
+#### Action recap.current
+
+Returns the current action that's running
+
+#### expect action.expect(attribute)
+
 
 #### recap.saved()
 

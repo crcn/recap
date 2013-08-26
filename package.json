@@ -12,7 +12,12 @@
     "paperclip": "~0.2.7",
     "mojojs": "~0.6.5",
     "underscore": "~1.5.1",
-    "toarray": "0.0.1"
+    "toarray": "0.0.1",
+    "xpgen": "0.0.3",
+    "flatten": "0.0.1",
+    "sift": "0.0.12",
+    "flatstack": "0.0.7",
+    "async": "~0.2.9"
   },
   "devDependencies": {
     "coffee-script": "~1.6.3",
